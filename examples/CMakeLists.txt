@@ -35,6 +35,10 @@ add_executable(spin-text spin-text.c)
 target_link_libraries(spin-text openlase)
 install(TARGETS spin-text DESTINATION bin)
 
+add_executable(laser-clock laser-clock.c)
+target_link_libraries(laser-clock openlase)
+install(TARGETS laser-clock DESTINATION bin)
+
 add_executable(pong pong.c)
 target_link_libraries(pong openlase)
 install(TARGETS pong DESTINATION bin)
